@@ -16,8 +16,11 @@ void process(string fileName) {
     }
         int N, M; //Dung de luu hang va cot
         fileRead >> N >> M;
+        if (N <= 0 || M <=0) {
+            return;
+        }
         double maxEachRow[N]; //dung de luu gia tri lon nhat cua tung hang 
-        double maxAll;
+        double maxAll = -9999999999;
         for (int i = 0; i < N; i++) {
             maxEachRow[i] = -999999999999;
             for (int j = 0; j < M; j++) {
