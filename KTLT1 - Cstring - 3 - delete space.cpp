@@ -1,15 +1,7 @@
 #include <iostream>
 #include <cstring> 
 using namespace std; 
-int findLength(char str[]) {
-    int index = 0;
-    int count = 0;
-    while (str[index] != '\0') {
-        count++;
-        index++;
-    }
-    return count;
-}
+
 void deleteGap(char str[]) {
     int start = 0, end = strlen(str) - 1;
     while (str[start] == ' ' && str[start] != '\0') {
