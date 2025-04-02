@@ -8,8 +8,6 @@ void replaceString(string s, string s1, string s2){
         cout << s;
         return; 
     }
-    cout << pos;
-    cout << s[pos];
     s.replace(pos,s1.length(),s2);
     cout << s;
 }
