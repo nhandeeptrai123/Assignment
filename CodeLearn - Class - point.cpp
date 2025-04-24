@@ -13,6 +13,9 @@ Point() {
         this -> x = x; 
         this -> y = y;
     }
+    ~Point(){
+
+    }
     void setX(double x) {
         this -> x = x;
     }
@@ -35,6 +38,7 @@ Point() {
     double distance (Point another) {
         return distance(another.getX(), another.getY());
     }
+    static double get(){ return 23;}
 };
 int main() {
 	Point p1(1.5, 6.7);
